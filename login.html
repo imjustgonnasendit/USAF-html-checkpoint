@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <h1 alt="Logo" class="logo">GMDB</h1>
+          <a href="index.html">Home</a>
+          <a href="login.html">Login</a>
+        </div>
+        <div class="nav-right">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <button class="search-button">Search</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <button type="submit">Log In</button>
+      </form>
+      <p id="error-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
