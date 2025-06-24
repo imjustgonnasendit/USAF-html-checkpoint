@@ -1,0 +1,40 @@
+#results-header {
+  padding: 1.5rem 2rem 0 2rem;
+}
+
+#results-header a {
+  color: teal;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 128, 128, 0.8);
+  z-index: 10;
+}
+
+.no-results {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+}

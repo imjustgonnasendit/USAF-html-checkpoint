@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Search Results | GMDB</title>
     <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="search.css" />
   </head>
   <body>
     <header>
@@ -15,7 +15,6 @@
           <a href="index.html">Home</a>
           <a href="login.html">Login</a>
         </div>
-
         <div class="nav-right">
           <input
             type="text"
@@ -28,21 +27,12 @@
       </nav>
     </header>
 
-    <div class="login-container">
-      <h2>Login</h2>
-      <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required />
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required />
-
-        <button type="submit">Log In</button>
-      </form>
-      <p id="error-message"></p>
+    <div id="results-header">
+      <a href="javascript:history.back()">← Back to Results</a>
     </div>
 
+    <main class="movie-grid" id="searchResults"></main>
+
     <script src="search.js"></script>
-    <script src="search-handler.js"></script>
   </body>
 </html>
