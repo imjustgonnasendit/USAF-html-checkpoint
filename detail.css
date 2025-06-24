@@ -1,0 +1,95 @@
+.movie-detail {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.movie-info {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.detail-poster {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px teal;
+}
+
+.movie-meta {
+  flex: 1;
+}
+
+.movie-meta h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: teal;
+}
+
+.movie-meta p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.comments {
+  background-color: #222;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.comments h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: teal;
+}
+
+/* Comment textarea */
+#commentForm textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+#commentForm button {
+  width: auto;
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+#commentForm button:hover {
+  background-color: #008080;
+}
+
+@media (max-width: 600px) {
+  .movie-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail-poster {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .movie-meta {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
